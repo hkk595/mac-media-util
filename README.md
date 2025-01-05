@@ -1,13 +1,14 @@
-# mac-jpg-converter
-A shell script for converting common image formats to jpg by batch on macOS.
+# mac-media-util
 
-### Usage
-Grant execution permission to the script:
-```
-sudo chmod +x jpg_converter.sh
+A collection of shell scripts for the following.
+
+Convert common image formats to ```.jpg``` by batch on macOS.
+```bash
+# if <input_directory> and <output_directory> are the same, it will directly convert all images in this folder to jpg
+bash jpg_converter.sh <input_directory> <output_directory>
 ```
 
-Run the script:
-```
-./jpg_converter.sh <source directory> <destination directory>
+Add padding to videos by using ```ffmpeg```.
+```bash
+bash video_converter.sh <input_video> <output_video>
 ```
